@@ -17,8 +17,8 @@ public class CameraRaycast : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 10000))
         {
-
-            //Debug.Log(hit.point);
+            Debug.DrawLine(camerause.transform.position, hit.point, Color.red);
+            Debug.Log("Hit" + hit.point);
             //Transform objectHit = hit.transform;
 
             // Do something with the object that was hit by the raycast.
